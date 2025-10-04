@@ -1,5 +1,117 @@
-body{
-    justify-content: center;
-    align-content: center;
-    height: 100vh;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #191930;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #a308fd;
+  padding: 20px;
+  border-radius: 12px;
+  width: 700px;
+  max-width: 95%;
+  box-shadow: 0 10px 25px rgba(123, 243, 108, 0.555);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+form input, form button {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+}
+
+form input[type="text"], form input[type="date"] {
+  flex: 1;
+}
+
+form button {
+  background: #6366f1;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #4f46e5;
+}
+
+.actions-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.actions-bar button {
+  background: #3b82f6;
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.actions-bar button:hover {
+  background: #2563eb;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1f2937;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: #111827;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #374151;
+}
+
+.no-todos {
+  text-align: center;
+  color: #9ca3af;
+}
+
+.todo-actions button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.edit {
+  background: #f59e0b;
+  color: #fff;
+}
+
+.delete {
+  background: #ef4444;
+  color: #fff;
+}
+
+.done {
+  background: #10b981;
+  color: #fff;
 }
